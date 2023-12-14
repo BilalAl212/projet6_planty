@@ -1,0 +1,174 @@
+
+.preorder-form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+   
+}
+
+
+
+.compteurs {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+.menu-link {
+font-weight: 600;
+
+}
+
+
+.count {
+    flex: 1;
+   display: flex;
+   justify-content: center;
+}
+
+.compteurs .count input  {
+   font-weight: 600;
+    width: 40px;
+ }
+ 
+ .compteurs::after {
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: " ";
+    background: white;
+ }
+
+.contact {
+    display: flex;
+    gap: 80px;
+    position: relative;
+}
+
+.contact::before {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: " ";
+    background: white;
+}
+
+.contact p:first-child {
+    font-size: 30px;
+    font-family: syne;
+    font-weight: 700;
+}
+
+
+.part-left, .part-right  {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input {
+    border-radius: 5px;
+}
+
+.wpcf7 input[type="submit"] {
+    color: white;
+    background-color: #E0B9B4;
+    height: 50px;
+    border-radius: 5px;
+    display: block;
+    margin:auto;
+   width: 200px;
+}
+
+.button #bt {
+  display: none;
+}
+
+.wpcf7 .wpcf7-form-control-wrap {
+    margin-top: 20px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.wpcf7 label, .wpcf7-quiz-label {
+    color: white;
+    font-family: Syne;
+    margin-bottom: 2px;
+    border-radius: 5px;
+}
+
+.wpcf7 input:not([type=submit]), .wpcf7 select, .wpcf7 textarea {
+    border-radius: 7px;
+}
+
+.main-navigation li:first-child {
+    order:1;
+    color: black;
+    margin-right: 30px;
+}
+
+.main-navigation li:nth-child(2) {
+    background-color: #E0B9B4;
+    order: 3;
+	font-family: syne;
+	line-height: 80px;
+    padding: 0 40px;
+
+      
+  
+}
+.ast-builder-menu-1 .main-navigation .cm a.menu-link {    
+    color: white;
+}
+.main-navigation li:last-child {
+    order: 2;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+
+
+
+@media screen and (max-width: 921px)  {
+    .main-navigation li:nth-child(2) {
+        background-color: #E0B9B4;
+    }
+     .ast-builder-menu-mobile .main-navigation ul.main-header-menu li:nth-child(2) > a.menu-link {
+        color: #FFFFFF;
+        background-color: #E0B9B4;
+    }
+    
+}
+
+@media screen and (max-width: 768px)  {
+    .container {
+        width: 100%;
+      }
+
+      .contact {
+        flex-direction: column;
+    }
+    .contact::before {
+        display: none;
+    }
+}
+
+
